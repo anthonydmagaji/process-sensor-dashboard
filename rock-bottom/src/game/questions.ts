@@ -58,10 +58,6 @@ export function entriesOf(question: Question): Entry[] {
   return entries;
 }
 
-export function entryByKey(question: Question, key: string): Entry | undefined {
-  return entriesOf(question).find((entry) => entry.key === key);
-}
-
 function lastWord(text: string): string {
   const words = text.trim().split(/\s+/);
   return words[words.length - 1] ?? '';
