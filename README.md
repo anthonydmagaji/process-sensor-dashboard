@@ -45,3 +45,9 @@ columns) instead of using synthetic data.
     run_script_version.py    # v1: simple script version
     app.py                   # v2: interactive Streamlit dashboard
     requirements.txt
+
+## Also in this repository
+
+`rock-bottom/` is a separate project: a browser quiz game (Vite + TypeScript)
+where the lowest score wins. See [rock-bottom/README.md](rock-bottom/README.md)
+for how to run it and how to add questions.

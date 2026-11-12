@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "Rock Bottom - a lowest-score-wins survey quiz game for the browser",
   "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

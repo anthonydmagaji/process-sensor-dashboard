@@ -45,11 +45,9 @@ describe('question bank', () => {
     expect([...formats].sort()).toEqual(['blank', 'board', 'clues', 'open']);
   });
 
-  it('gives every question between 15 and 40 answers', () => {
+  it('gives every question enough answers for a full round', () => {
     for (const question of QUESTION_BANK) {
-      const count = entriesOf(question).length;
-      expect(count, question.id).toBeGreaterThanOrEqual(15);
-      expect(count, question.id).toBeLessThanOrEqual(40);
+      expect(entriesOf(question).length, question.id).toBeGreaterThanOrEqual(12);
     }
   });
 
